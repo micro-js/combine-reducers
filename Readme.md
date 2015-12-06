@@ -6,7 +6,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-Combines an object of reducers
+Combines an object of reducers together to form a single, composite reducer. This function is identical to the one provided by [https://github.com/rackt/redux](redux) but it doesn't do the sanity checks that redux does, which allows you to do a few things like having multiple root reducers combined into one that you can't do with redux's assertions.
 
 ## Installation
 
@@ -17,15 +17,27 @@ Combines an object of reducers
 ```js
 var combineReducers = require('@micro-js/combine-reducers')
 
+combineReducers({
+  counter1: counterReducer,
+  counter2: counterReducer
+})
+
+function counterReducer (state, action) {
+  if (action.type === INCREMENT) {
+    return ++state
+  }
+
+  return state
+}
 ```
 
 ## API
 
-### combineReducers(arg)
+### combineReducers(reducers)
 
-- `arg` -
+- `reducers` - An object containing a map of reducers to property names
 
-**Returns:**
+**Returns:** The combined reducer map as a single reducing function.
 
 ## License
 
