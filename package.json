@@ -2,7 +2,7 @@
   "name": "@micro-js/combine-reducers",
   "description": "Combines an object of reducers",
   "repository": "git://github.com/micro-js/combine-reducers.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
