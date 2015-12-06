@@ -1,0 +1,15 @@
+{
+  "name": "@micro-js/combine-reducers",
+  "description": "Combines an object of reducers",
+  "repository": "git://github.com/micro-js/combine-reducers.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
