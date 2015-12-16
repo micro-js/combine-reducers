@@ -1,5 +1,5 @@
 {
-  "name": "@micro-js/combine-reducers",
+  "name": "@f/combine-reducers",
   "description": "Combines an object of reducers",
   "repository": "git://github.com/micro-js/combine-reducers.git",
   "version": "1.0.3",
@@ -9,8 +9,8 @@
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
   "dependencies": {
-    "@micro-js/clone-shallow": "^1.0.0",
-    "@micro-js/compose-reducers": "^1.0.0"
+    "@f/clone-shallow": "^1.0.0",
+    "@f/compose-reducers": "^1.0.0"
   },
   "devDependencies": {
     "tape": "^4.2.2"
