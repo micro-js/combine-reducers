@@ -6,7 +6,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Code style][standard-image]][standard-url]
 
-Combines an object of reducers together to form a single, composite reducer. This function is identical to the one provided by [https://github.com/rackt/redux](redux) but it doesn't do the sanity checks that redux does, which allows you to do a few things like having multiple root reducers combined into one that you can't do with redux's assertions.
+Combines an object of reducers together to form a single, composite reducer. This function is identical to the one provided by [redux](https://github.com/rackt/redux) but it doesn't do the sanity checks that redux does, which allows you to do a few things like having multiple root reducers combined into one that you can't do with redux's assertions.
 
 ## Installation
 
