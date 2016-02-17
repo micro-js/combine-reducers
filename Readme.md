@@ -36,6 +36,7 @@ function counterReducer (state, action) {
 ### combineReducers(reducers)
 
 - `reducers` - An object containing a map of reducers to property names
+- `defaultState` - Optional. Specify a default value for the state object. Useful for nesting `combineReducers` calls.
 
 **Returns:** The combined reducer map as a single reducing function.
 
